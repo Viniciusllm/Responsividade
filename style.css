@@ -98,7 +98,7 @@ p {
     background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
     padding: 0px 10px;
     border-radius: 15px;
-    display: inline-block;
+    display: block;
     width: 320px;
     height: 320px;
     color: white;
@@ -211,9 +211,11 @@ label {
 }
 
 .floating-element {
-    position: absolute;
+    position: relative;
     top: 20px;
     right: 20px;
+    width: 12%;
+    margin-bottom: 50px;
     background:rgba(22, 21, 21, 0.9);
     padding: 10px 15px;
     border-radius: 20px;
@@ -236,4 +238,87 @@ label {
 [data-type="design"] {
     background: linear-gradient(45deg, #ff7e5f, #feb47b);
     color: white;
+}
+
+.midiasdigitais{
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    border-left: 8px solid #fa6502;
+    position: relative;
+}
+
+
+
+@media (max-width : 1000px){
+    header{
+        padding: 15px;
+    }
+
+    header h1{
+        padding-top: 30px;
+        font-size: 20px;
+    }
+
+    header p{
+        font-size: 12px;
+    }
+
+    main{
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;    
+        gap: 30px;
+        align-items: center;
+    }
+
+    .highlight-box{
+        display: flexbox;
+        justify-content: left;
+        border-radius: 25px;
+        padding: 30px;
+    }
+
+    .floating-element{
+        display: flex;
+        width: 30%;
+        margin-bottom: 50px;
+        padding: 10px;
+        text-align: center;
+        justify-content: left;
+    }
+    
+    .floating-element + h2{
+        font-size: 5rem;
+        font-weight: bolder;
+    }
+
+    .floating-element + p{
+        text-align: left;
+    }
+
+    .stats-container{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;    
+        gap: 30px;
+        align-items: center;
+    }
+
+    .stat-box{
+        padding: 50px;
+        width: 80%;
+    }
+
+    .stat-number{
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+
+
+    
 }
