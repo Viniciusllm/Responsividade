@@ -285,7 +285,7 @@ label {
 
     .floating-element{
         display: flex;
-        width: 30%;
+        width: 17%;
         margin-bottom: 50px;
         padding: 10px;
         text-align: center;
@@ -310,15 +310,20 @@ label {
     }
 
     .stat-box{
-        padding: 50px;
-        width: 80%;
+    border-radius: 40px;
+        padding: 200px;
+        width: 90%;
     }
 
     .stat-number{
-        font-size: 3rem;
+        margin-top: 70px;
+        font-size: 6rem;
         font-weight: bolder;
     }
 
+    .stat-box p {
+        font-size: 2.1rem;
+    }
 
     
 }
